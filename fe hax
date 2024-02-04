@@ -1,0 +1,338 @@
+-- Gui to Lua
+-- Version: 3.6
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local Text = Instance.new("TextButton")
+local Text_2 = Instance.new("TextButton")
+local Reming = Instance.new("TextButton")
+local Image = Instance.new("TextButton")
+local part = Instance.new("TextButton")
+local disco = Instance.new("TextButton")
+local no = Instance.new("TextButton")
+
+-- Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ScrollingFrame.Parent = ScreenGui
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.55876863, 0, 0.154936984, 0)
+ScrollingFrame.Size = UDim2.new(0, 182, 0, 271)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 300)
+ScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.104395606, 0, 0.00369003695, 0)
+TextLabel.Size = UDim2.new(0, 144, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "FE bypass"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Text.Name = "Text"
+Text.Parent = ScrollingFrame
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text.BorderSizePixel = 5
+Text.Position = UDim2.new(0.0934065953, 0, 0.112728328, 0)
+Text.Size = UDim2.new(0, 146, 0, 50)
+Text.Font = Enum.Font.SourceSans
+Text.Text = "Decal"
+Text.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text.TextScaled = true
+Text.TextSize = 14.000
+Text.TextWrapped = true
+
+Text_2.Name = "Text"
+Text_2.Parent = ScrollingFrame
+Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text_2.BorderSizePixel = 5
+Text_2.Position = UDim2.new(0.0934065953, 0, 0.222174451, 0)
+Text_2.Size = UDim2.new(0, 146, 0, 50)
+Text_2.Font = Enum.Font.SourceSans
+Text_2.Text = "Skybox"
+Text_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text_2.TextScaled = true
+Text_2.TextSize = 14.000
+Text_2.TextWrapped = true
+
+Reming.Name = "Reming"
+Reming.Parent = ScrollingFrame
+Reming.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Reming.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Reming.BorderSizePixel = 5
+Reming.Position = UDim2.new(0.0934065953, 0, 0.343941152, 0)
+Reming.Size = UDim2.new(0, 146, 0, 50)
+Reming.Font = Enum.Font.SourceSans
+Reming.Text = "Remind"
+Reming.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reming.TextScaled = true
+Reming.TextSize = 14.000
+Reming.TextWrapped = true
+
+Image.Name = "Image"
+Image.Parent = ScrollingFrame
+Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Image.BorderSizePixel = 5
+Image.Position = UDim2.new(0.0934065953, 0, 0.442603648, 0)
+Image.Size = UDim2.new(0, 146, 0, 50)
+Image.Font = Enum.Font.SourceSans
+Image.Text = "Image"
+Image.TextColor3 = Color3.fromRGB(0, 0, 0)
+Image.TextScaled = true
+Image.TextSize = 14.000
+Image.TextWrapped = true
+
+part.Name = "part"
+part.Parent = ScrollingFrame
+part.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+part.BorderColor3 = Color3.fromRGB(0, 0, 0)
+part.BorderSizePixel = 5
+part.Position = UDim2.new(0.0934065953, 0, 0.54275614, 0)
+part.Size = UDim2.new(0, 146, 0, 50)
+part.Font = Enum.Font.SourceSans
+part.Text = "Particles"
+part.TextColor3 = Color3.fromRGB(0, 0, 0)
+part.TextScaled = true
+part.TextSize = 14.000
+part.TextWrapped = true
+
+disco.Name = "disco"
+disco.Parent = ScrollingFrame
+disco.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+disco.BorderColor3 = Color3.fromRGB(0, 0, 0)
+disco.BorderSizePixel = 5
+disco.Position = UDim2.new(0.0934065953, 0, 0.656702697, 0)
+disco.Size = UDim2.new(0, 146, 0, 50)
+disco.Font = Enum.Font.SourceSans
+disco.Text = "disco"
+disco.TextColor3 = Color3.fromRGB(0, 0, 0)
+disco.TextScaled = true
+disco.TextSize = 14.000
+disco.TextWrapped = true
+
+no.Name = "no"
+no.Parent = ScrollingFrame
+no.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+no.BorderColor3 = Color3.fromRGB(0, 0, 0)
+no.BorderSizePixel = 5
+no.Position = UDim2.new(0.0934065953, 0, 0.764371753, 0)
+no.Size = UDim2.new(0, 146, 0, 50)
+no.Font = Enum.Font.SourceSans
+no.Text = "SHutdown"
+no.TextColor3 = Color3.fromRGB(0, 0, 0)
+no.TextScaled = true
+no.TextSize = 14.000
+no.TextWrapped = true
+
+-- Scripts:
+
+local function RAQJ_fake_script() -- Text.Script 
+	local script = Instance.new('Script', Text)
+
+	function click()
+		function exPro(root)
+			for _, v in pairs(root:GetChildren()) do
+				if v:IsA("Decal") and v.Texture ~= "http://www.roblox.com/asset/?id=9422866248" then
+					v.Parent = nil
+				elseif v:IsA("BasePart") then
+					v.Material = "Plastic"
+					v.Transparency = 0
+					local One = Instance.new("Decal", v)
+					local Two = Instance.new("Decal", v)
+					local Three = Instance.new("Decal", v)
+					local Four = Instance.new("Decal", v)
+					local Five = Instance.new("Decal", v)
+					local Six = Instance.new("Decal", v)
+					One.Texture = "http://www.roblox.com/asset/?id=9422866248"
+					Two.Texture = "http://www.roblox.com/asset/?id=9422866248"
+					Three.Texture = "http://www.roblox.com/asset/?id=9422866248"
+					Four.Texture = "http://www.roblox.com/asset/?id=9422866248"
+					Five.Texture = "http://www.roblox.com/asset/?id=9422866248"
+					Six.Texture = "http://www.roblox.com/asset/?id=9422866248"
+					One.Face = "Front"
+					Two.Face = "Back"
+					Three.Face = "Right"
+					Four.Face = "Left"
+					Five.Face = "Top"
+					Six.Face = "Bottom"
+				end
+				exPro(v)
+			end
+		end
+		function asdf(root)
+			for _, v in pairs(root:GetChildren()) do
+				asdf(v)
+			end
+		end
+		exPro(game.Workspace)
+		asdf(game.Workspace)
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(RAQJ_fake_script)()
+local function NIIN_fake_script() -- Text_2.Script 
+	local script = Instance.new('Script', Text_2)
+
+	function click()
+		s = Instance.new("Sky")
+		s.Name = "Sky"
+		s.Parent = game.Lighting
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=9422866248"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=9422866248"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=9422866248"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=9422866248"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=9422866248"
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=9422866248"
+		game.Lighting.TimeOfDay = 12
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(NIIN_fake_script)()
+local function EURMS_fake_script() -- Reming.Script 
+	local script = Instance.new('Script', Reming)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local m = Instance.new("Hint", game.workspace)
+		m.Text = "team k00pkidd has FE BYPASSED this server LOL"
+	end)
+end
+coroutine.wrap(EURMS_fake_script)()
+local function ISKGS_fake_script() -- Image.Script 
+	local script = Instance.new('Script', Image)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v.Name ~= me and not v.PlayerGui:FindFirstChild("Screamer") and v:FindFirstChild("PlayerGui") then
+				spawn(function()
+					local newgui = Instance.new("ScreenGui",v.PlayerGui)
+					newgui.Name = "Screamer"
+					local newimage = Instance.new("ImageLabel",newgui)
+					newimage.Image = "http://www.roblox.com/asset/?id=9018233362"
+					newimage.Size = UDim2.new(1,1,1,1)
+					local s = Instance.new("Sound",newgui)
+					s.SoundId = "rbxassetid://9069609200"
+					s.Volume = 9999999999999999999999999999999999999
+					s.Looped = true
+					s:Play()
+					print("Screamed "..v.Name)
+					while wait(9) do
+	
+						newimage.Parent:Destroy()
+	
+					end
+				end)
+			end
+		end
+	end)
+end
+coroutine.wrap(ISKGS_fake_script)()
+local function NMBEK_fake_script() -- part.Script 
+	local script = Instance.new('Script', part)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(game.Players:GetChildren()) do
+			emit = Instance.new("ParticleEmitter")
+			emit.Parent = v.Character.Head
+			emit.Texture = "http://www.roblox.com/asset/?id=9698929683"
+			emit.VelocitySpread = 100000
+		end
+	end)
+end
+coroutine.wrap(NMBEK_fake_script)()
+local function WHWHB_fake_script() -- disco.Script 
+	local script = Instance.new('Script', disco)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Lighting = game:GetService("Lighting")
+		local ColorCorrection = Instance.new("ColorCorrectionEffect", Lighting)
+	
+		function zigzag(X) 
+			return math.acos(math.cos(X*math.pi))/math.pi
+		end
+	
+		Counter = 0
+	
+		Lighting.TimeOfDay = "12:00"
+	
+		while wait(0.1) do 
+			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
+			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
+			Counter += 0.01
+		end
+	end)
+end
+coroutine.wrap(WHWHB_fake_script)()
+local function SACG_fake_script() -- no.Script 
+	local script = Instance.new('Script', no)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i, players in pairs(game.Players:GetChildren()) do
+			players:Kick("Teh Game Iz Fuked Up!!!!111")
+		end
+	end)
+	
+end
+coroutine.wrap(SACG_fake_script)()
+local function MOAU_fake_script() -- ScrollingFrame.Drag Gui Script 
+	local script = Instance.new('LocalScript', ScrollingFrame)
+
+	function dragify(Main)
+	dragToggle = nil
+	dragSpeed = 0.95 -- You can edit this.
+	dragInput = nil
+	dragStart = nil
+	dragPos = nil
+	
+	function updateInput(input)
+	Delta = input.Position - dragStart
+	Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	game:GetService("TweenService"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()
+	end
+	
+	Main.InputBegan:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+	dragToggle = true
+	dragStart = input.Position
+	startPos = Main.Position
+	input.Changed:Connect(function()
+	if (input.UserInputState == Enum.UserInputState.End) then
+	dragToggle = false
+	end
+	end)
+	end
+	end)
+	
+	Main.InputChanged:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+	dragInput = input
+	end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+	if (input == dragInput and dragToggle) then
+	updateInput(input)
+	end
+	end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(MOAU_fake_script)()
